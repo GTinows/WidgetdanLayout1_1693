@@ -9,6 +9,15 @@ class ShowProfile extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          title: const Center(
+            child: Text(
+              "PROFIL",
+              style: TextStyle(color: Colors.purple, fontSize: 30, fontFamily: "Consolas")
+              ,
+            ),
+          )
+        ),
         backgroundColor: kColor,
         body: Center(
           child: Column(
@@ -27,8 +36,8 @@ class ShowProfile extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Sakshi', style: kTextStyle4),
-                          Text('FLUTTER DEVELOPER', style: kTextStyle5),
+                          Text('Mukti Laksono', style: kTextStyle4),
+                          Text('220711693', style: kTextStyle5),
                         ],
                       ),
                     ),
@@ -51,7 +60,7 @@ class ShowProfile extends StatelessWidget {
                     Container(
                       child: Column(
                         children: [
-                          Text('3', style: kTextStyle3),
+                          Text('666', style: kTextStyle3),
                           Text('Followers', style: kTextStyle3),
                         ],
                       ),
@@ -59,7 +68,7 @@ class ShowProfile extends StatelessWidget {
                     Container(
                       child: Column(
                         children: [
-                          Text('10', style: kTextStyle3),
+                          Text('111', style: kTextStyle3),
                           Text('Following', style: kTextStyle3),
                         ],
                       ),
@@ -73,11 +82,12 @@ class ShowProfile extends StatelessWidget {
             ],
           ),
         ),
-        floatingActionButton: FloatingActionButton(
+        floatingActionButton: FloatingActionButton.extended(
           onPressed: () {
             Navigator.pop(context);
           },
-          child: Icon(Icons.arrow_back),
+          label: Text('Kembali'),
+          icon : Icon(Icons.arrow_back),
           backgroundColor: Colors.teal,
         )),
     );

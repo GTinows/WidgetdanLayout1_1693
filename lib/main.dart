@@ -6,8 +6,10 @@ import 'package:gd1_b_1693/utilities/constant.dart';
 
 void main() => runApp(const MyApp());
 
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -49,11 +51,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               const Text(
-                'Sakshi',
+                'Mukti Laksono',
                 style: kTextStyle1,
               ),
               const Text(
-                'FLUTTER DEVELOPER',
+                '220711693',
                 style: kTextStyle2,
               ),
               kSizeBox,

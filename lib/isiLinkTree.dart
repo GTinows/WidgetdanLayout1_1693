@@ -16,18 +16,24 @@ class _IsiLinkTreeState extends State<IsiLinkTree> {
     return Column(
       children: [
         CardForLinkTree(
-          text: '+91 123 456 789',
+          text: '+62 8215 8682 867',
           icon: Icons.phone,
+          onPressed: () {
+            Direct.launchURL('https://web.whatsapp.com/');
+          },
         ),
-        const CardForLinkTree(
-          text: 'broman@gmail.com',
+        CardForLinkTree(
+          text: 'Tiinows13@gmail.com',
           icon: Icons.email,
+          onPressed: () {
+            Direct.launchURL('https://mail.google.com/mail/u/0/');
+          },
         ),
         CardForLinkTree(
           text: 'Instagram',
           icon: FontAwesomeIcons.instagram,
           onPressed: () {
-            Direct.launchURL('https://www.instagram.com/');
+            Direct.launchURL('https://www.instagram.com/p/DAOZXwiSO7G/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==');
           },
         ),
         CardForLinkTree(

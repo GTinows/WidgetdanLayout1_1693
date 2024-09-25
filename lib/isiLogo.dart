@@ -20,6 +20,9 @@ class _IsiLogoState extends State<IsiLogo> {
         const Icon(FontAwesomeIcons.user),
         kSizeBox2,
         const Icon(FontAwesomeIcons.googleDrive),
+        kSizeBox2,
+        const Icon(FontAwesomeIcons.safari),
+
       ],
     );
   }
